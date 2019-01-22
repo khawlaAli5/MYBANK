@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F851E8618476AFB4F44B70 /* Pods_Pets_B_B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D9DB7111ACC042DA5BAC0D /* Pods_Pets_B_B.framework */; };
 		624DE1EB21F6EB0E0011AAD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */; };
 		624DE1ED21F6EB0E0011AAD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */; };
 		624DE1F021F6EB0E0011AAD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1EE21F6EB0E0011AAD1 /* Main.storyboard */; };
 		624DE1F321F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1F121F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld */; };
 		624DE1F521F6EB100011AAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1F421F6EB100011AAD1 /* Assets.xcassets */; };
 		624DE1F821F6EB100011AAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1F621F6EB100011AAD1 /* LaunchScreen.storyboard */; };
+		624DE20021F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1FF21F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg */; };
+		624DE20821F6FDDE0011AAD1 /* SignUpB.png in Resources */ = {isa = PBXBuildFile; fileRef = 624DE20721F6FDDE0011AAD1 /* SignUpB.png */; };
+		624DE20A21F703810011AAD1 /* PolarBear.mov in Resources */ = {isa = PBXBuildFile; fileRef = 624DE20921F6FE510011AAD1 /* PolarBear.mov */; };
+		624DE20C21F72CC90011AAD1 /* CD.mov in Resources */ = {isa = PBXBuildFile; fileRef = 624DE20B21F72CC80011AAD1 /* CD.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ABAC207984ABD9F4F3080F2 /* Pods-Pets B&B.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets B&B.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B.release.xcconfig"; sourceTree = "<group>"; };
 		624DE1E721F6EB0E0011AAD1 /* Pets B&B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pets B&B.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,12 @@
 		624DE1F421F6EB100011AAD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		624DE1F721F6EB100011AAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		624DE1F921F6EB100011AAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624DE1FF21F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog_foot_prints_background_repeating_design_6828604.jpg; sourceTree = "<group>"; };
+		624DE20721F6FDDE0011AAD1 /* SignUpB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpB.png; sourceTree = "<group>"; };
+		624DE20921F6FE510011AAD1 /* PolarBear.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = PolarBear.mov; sourceTree = "<group>"; };
+		624DE20B21F72CC80011AAD1 /* CD.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = CD.mov; sourceTree = SOURCE_ROOT; };
+		C1D9DB7111ACC042DA5BAC0D /* Pods_Pets_B_B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets_B_B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F877CF270080B865171D52CE /* Pods-Pets B&B.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets B&B.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F851E8618476AFB4F44B70 /* Pods_Pets_B_B.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				624DE1E921F6EB0E0011AAD1 /* Pets B&B */,
 				624DE1E821F6EB0E0011AAD1 /* Products */,
+				B4AA1BF95411CFC34BFF800B /* Pods */,
+				6C2E67510F90018730EF5624 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +72,35 @@
 			isa = PBXGroup;
 			children = (
 				624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */,
+				624DE20921F6FE510011AAD1 /* PolarBear.mov */,
 				624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */,
+				624DE20B21F72CC80011AAD1 /* CD.mov */,
 				624DE1EE21F6EB0E0011AAD1 /* Main.storyboard */,
 				624DE1F421F6EB100011AAD1 /* Assets.xcassets */,
+				624DE20721F6FDDE0011AAD1 /* SignUpB.png */,
+				624DE1FF21F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg */,
 				624DE1F621F6EB100011AAD1 /* LaunchScreen.storyboard */,
 				624DE1F921F6EB100011AAD1 /* Info.plist */,
 				624DE1F121F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld */,
 			);
 			path = "Pets B&B";
+			sourceTree = "<group>";
+		};
+		6C2E67510F90018730EF5624 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1D9DB7111ACC042DA5BAC0D /* Pods_Pets_B_B.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4AA1BF95411CFC34BFF800B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F877CF270080B865171D52CE /* Pods-Pets B&B.debug.xcconfig */,
+				1ABAC207984ABD9F4F3080F2 /* Pods-Pets B&B.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 624DE1FC21F6EB100011AAD1 /* Build configuration list for PBXNativeTarget "Pets B&B" */;
 			buildPhases = (
+				C444CA2113A2DF2CDB0BD541 /* [CP] Check Pods Manifest.lock */,
 				624DE1E321F6EB0E0011AAD1 /* Sources */,
 				624DE1E421F6EB0E0011AAD1 /* Frameworks */,
 				624DE1E521F6EB0E0011AAD1 /* Resources */,
+				0763860B0C7AB5F87D397749 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,13 +163,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624DE20821F6FDDE0011AAD1 /* SignUpB.png in Resources */,
 				624DE1F821F6EB100011AAD1 /* LaunchScreen.storyboard in Resources */,
+				624DE20C21F72CC90011AAD1 /* CD.mov in Resources */,
+				624DE20021F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg in Resources */,
 				624DE1F521F6EB100011AAD1 /* Assets.xcassets in Resources */,
 				624DE1F021F6EB0E0011AAD1 /* Main.storyboard in Resources */,
+				624DE20A21F703810011AAD1 /* PolarBear.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0763860B0C7AB5F87D397749 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LFLoginController/LFLoginController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLoginController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C444CA2113A2DF2CDB0BD541 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pets B&B-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		624DE1E321F6EB0E0011AAD1 /* Sources */ = {
@@ -284,6 +373,7 @@
 		};
 		624DE1FD21F6EB100011AAD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F877CF270080B865171D52CE /* Pods-Pets B&B.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +392,7 @@
 		};
 		624DE1FE21F6EB100011AAD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ABAC207984ABD9F4F3080F2 /* Pods-Pets B&B.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
