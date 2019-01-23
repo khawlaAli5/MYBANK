@@ -10,14 +10,19 @@
 		00F851E8618476AFB4F44B70 /* Pods_Pets_B_B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D9DB7111ACC042DA5BAC0D /* Pods_Pets_B_B.framework */; };
 		624DE1EB21F6EB0E0011AAD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */; };
 		624DE1ED21F6EB0E0011AAD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */; };
-		624DE1F021F6EB0E0011AAD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1EE21F6EB0E0011AAD1 /* Main.storyboard */; };
 		624DE1F321F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1F121F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld */; };
 		624DE1F521F6EB100011AAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1F421F6EB100011AAD1 /* Assets.xcassets */; };
 		624DE1F821F6EB100011AAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1F621F6EB100011AAD1 /* LaunchScreen.storyboard */; };
 		624DE20021F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1FF21F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg */; };
 		624DE20821F6FDDE0011AAD1 /* SignUpB.png in Resources */ = {isa = PBXBuildFile; fileRef = 624DE20721F6FDDE0011AAD1 /* SignUpB.png */; };
-		624DE20A21F703810011AAD1 /* PolarBear.mov in Resources */ = {isa = PBXBuildFile; fileRef = 624DE20921F6FE510011AAD1 /* PolarBear.mov */; };
-		624DE20C21F72CC90011AAD1 /* CD.mov in Resources */ = {isa = PBXBuildFile; fileRef = 624DE20B21F72CC80011AAD1 /* CD.mov */; };
+		624DE22121F733940011AAD1 /* CD.mov in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22021F733940011AAD1 /* CD.mov */; };
+		624DE22321F734DA0011AAD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22221F734DA0011AAD1 /* Main.storyboard */; };
+		624DE22621F7350B0011AAD1 /* AMInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE22521F7350B0011AAD1 /* AMInputView.swift */; };
+		624DE22821F735100011AAD1 /* AMInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22721F735100011AAD1 /* AMInputView.xib */; };
+		624DE22A21F7355C0011AAD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22921F7355C0011AAD1 /* Images.xcassets */; };
+		624DE22C21F73C5B0011AAD1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE22B21F73C5B0011AAD1 /* TableViewCell.swift */; };
+		624DE22E21F762930011AAD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22D21F762930011AAD1 /* GoogleService-Info.plist */; };
+		62679C2521F832EB003AFC0C /* logoo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62679C2421F832EB003AFC0C /* logoo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,15 +30,20 @@
 		624DE1E721F6EB0E0011AAD1 /* Pets B&B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pets B&B.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		624DE1EF21F6EB0E0011AAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		624DE1F221F6EB0E0011AAD1 /* Pets_B_B.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pets_B_B.xcdatamodel; sourceTree = "<group>"; };
 		624DE1F421F6EB100011AAD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		624DE1F721F6EB100011AAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		624DE1F921F6EB100011AAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624DE1FF21F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog_foot_prints_background_repeating_design_6828604.jpg; sourceTree = "<group>"; };
 		624DE20721F6FDDE0011AAD1 /* SignUpB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpB.png; sourceTree = "<group>"; };
-		624DE20921F6FE510011AAD1 /* PolarBear.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = PolarBear.mov; sourceTree = "<group>"; };
-		624DE20B21F72CC80011AAD1 /* CD.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = CD.mov; sourceTree = SOURCE_ROOT; };
+		624DE22021F733940011AAD1 /* CD.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = CD.mov; sourceTree = SOURCE_ROOT; };
+		624DE22221F734DA0011AAD1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		624DE22521F7350B0011AAD1 /* AMInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMInputView.swift; sourceTree = "<group>"; };
+		624DE22721F735100011AAD1 /* AMInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMInputView.xib; sourceTree = "<group>"; };
+		624DE22921F7355C0011AAD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		624DE22B21F73C5B0011AAD1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		624DE22D21F762930011AAD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		62679C2421F832EB003AFC0C /* logoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoo.png; sourceTree = "<group>"; };
 		C1D9DB7111ACC042DA5BAC0D /* Pods_Pets_B_B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets_B_B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F877CF270080B865171D52CE /* Pods-Pets B&B.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets B&B.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,19 +81,32 @@
 		624DE1E921F6EB0E0011AAD1 /* Pets B&B */ = {
 			isa = PBXGroup;
 			children = (
+				624DE22421F735010011AAD1 /* AMInputView */,
 				624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */,
-				624DE20921F6FE510011AAD1 /* PolarBear.mov */,
 				624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */,
-				624DE20B21F72CC80011AAD1 /* CD.mov */,
-				624DE1EE21F6EB0E0011AAD1 /* Main.storyboard */,
+				62679C2421F832EB003AFC0C /* logoo.png */,
+				624DE22021F733940011AAD1 /* CD.mov */,
+				624DE22221F734DA0011AAD1 /* Main.storyboard */,
 				624DE1F421F6EB100011AAD1 /* Assets.xcassets */,
+				624DE22921F7355C0011AAD1 /* Images.xcassets */,
 				624DE20721F6FDDE0011AAD1 /* SignUpB.png */,
 				624DE1FF21F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg */,
 				624DE1F621F6EB100011AAD1 /* LaunchScreen.storyboard */,
 				624DE1F921F6EB100011AAD1 /* Info.plist */,
+				624DE22D21F762930011AAD1 /* GoogleService-Info.plist */,
 				624DE1F121F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld */,
+				624DE22B21F73C5B0011AAD1 /* TableViewCell.swift */,
 			);
 			path = "Pets B&B";
+			sourceTree = "<group>";
+		};
+		624DE22421F735010011AAD1 /* AMInputView */ = {
+			isa = PBXGroup;
+			children = (
+				624DE22521F7350B0011AAD1 /* AMInputView.swift */,
+				624DE22721F735100011AAD1 /* AMInputView.xib */,
+			);
+			path = AMInputView;
 			sourceTree = "<group>";
 		};
 		6C2E67510F90018730EF5624 /* Frameworks */ = {
@@ -114,7 +137,8 @@
 				624DE1E321F6EB0E0011AAD1 /* Sources */,
 				624DE1E421F6EB0E0011AAD1 /* Frameworks */,
 				624DE1E521F6EB0E0011AAD1 /* Resources */,
-				0763860B0C7AB5F87D397749 /* [CP] Embed Pods Frameworks */,
+				B81DAFB83EC894880E9E7F8B /* [CP] Embed Pods Frameworks */,
+				6D6BEDE97F83990682A29BF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,20 +187,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624DE22A21F7355C0011AAD1 /* Images.xcassets in Resources */,
+				624DE22321F734DA0011AAD1 /* Main.storyboard in Resources */,
+				624DE22E21F762930011AAD1 /* GoogleService-Info.plist in Resources */,
+				624DE22821F735100011AAD1 /* AMInputView.xib in Resources */,
+				62679C2521F832EB003AFC0C /* logoo.png in Resources */,
 				624DE20821F6FDDE0011AAD1 /* SignUpB.png in Resources */,
 				624DE1F821F6EB100011AAD1 /* LaunchScreen.storyboard in Resources */,
-				624DE20C21F72CC90011AAD1 /* CD.mov in Resources */,
 				624DE20021F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg in Resources */,
 				624DE1F521F6EB100011AAD1 /* Assets.xcassets in Resources */,
-				624DE1F021F6EB0E0011AAD1 /* Main.storyboard in Resources */,
-				624DE20A21F703810011AAD1 /* PolarBear.mov in Resources */,
+				624DE22121F733940011AAD1 /* CD.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0763860B0C7AB5F87D397749 /* [CP] Embed Pods Frameworks */ = {
+		6D6BEDE97F83990682A29BF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B81DAFB83EC894880E9E7F8B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -185,13 +234,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LFLoginController/LFLoginController.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLoginController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -227,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624DE22C21F73C5B0011AAD1 /* TableViewCell.swift in Sources */,
 				624DE1ED21F6EB0E0011AAD1 /* ViewController.swift in Sources */,
+				624DE22621F7350B0011AAD1 /* AMInputView.swift in Sources */,
 				624DE1EB21F6EB0E0011AAD1 /* AppDelegate.swift in Sources */,
 				624DE1F321F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld in Sources */,
 			);
@@ -236,14 +297,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		624DE1EE21F6EB0E0011AAD1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				624DE1EF21F6EB0E0011AAD1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		624DE1F621F6EB100011AAD1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
