@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -162,7 +162,7 @@
                                             <constraint firstAttribute="width" secondItem="oy1-fw-KpS" secondAttribute="height" multiplier="1:1" id="znD-Ce-iIX"/>
                                         </constraints>
                                     </view>
-                                    <view clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sw-T9-t5g" userLabel="View - signin" customClass="VideoTableViewCell" customModule="Pets_B_B" customModuleProvider="target">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sw-T9-t5g" userLabel="View - signin" customClass="VideoTableViewCell" customModule="Pets_B_B" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="330" height="667"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJ0-35-l2X" userLabel="View - login contents">
@@ -213,7 +213,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" enabled="NO" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-lF-yfE">
-                                                <rect key="frame" x="89" y="350" width="153" height="57"/>
+                                                <rect key="frame" x="88.5" y="350" width="153" height="57"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="57" id="5TT-VR-LEa"/>
                                                     <constraint firstAttribute="width" constant="153" id="F0Z-6F-0ox"/>

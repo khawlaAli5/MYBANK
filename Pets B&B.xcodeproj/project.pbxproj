@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00F851E8618476AFB4F44B70 /* Pods_Pets_B_B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D9DB7111ACC042DA5BAC0D /* Pods_Pets_B_B.framework */; };
+		620242C921F986B700B3919D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620242C821F986B700B3919D /* Main.storyboard */; };
 		624DE1EB21F6EB0E0011AAD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */; };
 		624DE1ED21F6EB0E0011AAD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */; };
 		624DE1F321F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1F121F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld */; };
@@ -20,13 +21,14 @@
 		624DE22621F7350B0011AAD1 /* AMInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE22521F7350B0011AAD1 /* AMInputView.swift */; };
 		624DE22821F735100011AAD1 /* AMInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22721F735100011AAD1 /* AMInputView.xib */; };
 		624DE22A21F7355C0011AAD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22921F7355C0011AAD1 /* Images.xcassets */; };
-		624DE22C21F73C5B0011AAD1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE22B21F73C5B0011AAD1 /* TableViewCell.swift */; };
 		624DE22E21F762930011AAD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22D21F762930011AAD1 /* GoogleService-Info.plist */; };
 		62679C2521F832EB003AFC0C /* logoo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62679C2421F832EB003AFC0C /* logoo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1ABAC207984ABD9F4F3080F2 /* Pods-Pets B&B.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets B&B.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B.release.xcconfig"; sourceTree = "<group>"; };
+		620242C721F9865600B3919D /* CD.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CD.mp4; sourceTree = "<group>"; };
+		620242C821F986B700B3919D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		624DE1E721F6EB0E0011AAD1 /* Pets B&B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pets B&B.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +43,6 @@
 		624DE22521F7350B0011AAD1 /* AMInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMInputView.swift; sourceTree = "<group>"; };
 		624DE22721F735100011AAD1 /* AMInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMInputView.xib; sourceTree = "<group>"; };
 		624DE22921F7355C0011AAD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		624DE22B21F73C5B0011AAD1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		624DE22D21F762930011AAD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		62679C2421F832EB003AFC0C /* logoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoo.png; sourceTree = "<group>"; };
 		C1D9DB7111ACC042DA5BAC0D /* Pods_Pets_B_B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets_B_B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		620242C621F9824F00B3919D /* View Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */,
+				620242C821F986B700B3919D /* Main.storyboard */,
+			);
+			path = "View Contollers";
+			sourceTree = "<group>";
+		};
 		624DE1DE21F6EB0E0011AAD1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +91,11 @@
 		624DE1E921F6EB0E0011AAD1 /* Pets B&B */ = {
 			isa = PBXGroup;
 			children = (
+				620242C621F9824F00B3919D /* View Contollers */,
 				624DE22421F735010011AAD1 /* AMInputView */,
 				624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */,
-				624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */,
 				62679C2421F832EB003AFC0C /* logoo.png */,
+				620242C721F9865600B3919D /* CD.mp4 */,
 				624DE22021F733940011AAD1 /* CD.mov */,
 				624DE22221F734DA0011AAD1 /* Main.storyboard */,
 				624DE1F421F6EB100011AAD1 /* Assets.xcassets */,
@@ -95,7 +106,6 @@
 				624DE1F921F6EB100011AAD1 /* Info.plist */,
 				624DE22D21F762930011AAD1 /* GoogleService-Info.plist */,
 				624DE1F121F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld */,
-				624DE22B21F73C5B0011AAD1 /* TableViewCell.swift */,
 			);
 			path = "Pets B&B";
 			sourceTree = "<group>";
@@ -192,6 +202,7 @@
 				624DE22E21F762930011AAD1 /* GoogleService-Info.plist in Resources */,
 				624DE22821F735100011AAD1 /* AMInputView.xib in Resources */,
 				62679C2521F832EB003AFC0C /* logoo.png in Resources */,
+				620242C921F986B700B3919D /* Main.storyboard in Resources */,
 				624DE20821F6FDDE0011AAD1 /* SignUpB.png in Resources */,
 				624DE1F821F6EB100011AAD1 /* LaunchScreen.storyboard in Resources */,
 				624DE20021F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg in Resources */,
@@ -286,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624DE22C21F73C5B0011AAD1 /* TableViewCell.swift in Sources */,
 				624DE1ED21F6EB0E0011AAD1 /* ViewController.swift in Sources */,
 				624DE22621F7350B0011AAD1 /* AMInputView.swift in Sources */,
 				624DE1EB21F6EB0E0011AAD1 /* AppDelegate.swift in Sources */,
