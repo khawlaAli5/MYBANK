@@ -16,8 +16,19 @@ enum AMLoginSignupViewMode {
     case signup
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
   
+   // let actionCodeSettings = ActionCodeSettings
+    
+//    URL(string: "https://www.google.com")
+    // The sign-in operation has to always be completed in the app.
+//    actionCodeSettings.handleCodeInApp = true
+//    actionCodeSettings.setIOSBundleID(Bundle.main.bundleIdentifier!)
+//    actionCodeSettings.
+//    setAndroidPackageName("com.example.android",
+//    installIfNotAvailable: false, minimumVersion: "12")
+    
+    
     //SIGNIN PAGE
     
     let animationDuration = 0.25
@@ -90,7 +101,7 @@ class ViewController: UIViewController {
       //Background Video
         view.backgroundColor = UIColor(red: 224 / 255, green: 68 / 255, blue: 98 / 255, alpha: 1)
       
-        videoURL = Bundle.main.url(forResource: "CD", withExtension: "mp4")?.absoluteURL
+        videoURL = Bundle.main.url(forResource: "CD", withExtension: "mov")?.absoluteURL
         
         //LOGIN
         // set view to login mode
@@ -99,12 +110,35 @@ class ViewController: UIViewController {
         //add keyboard notification
         NotificationCenter.default.addObserver(self, selector: #selector(keyboarFrameChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification , object: nil)
       
-     
+        signupButton.layer.cornerRadius = 10
+        
+        signupButton.clipsToBounds = true
+        
+        loginButton.layer.cornerRadius = 10
+        
+        loginButton.clipsToBounds = true
+        
     }
-    
-   
-
-
+//    //MARK:TeddyBear
+//
+//     func fractionComplete(for textField: UITextField) -> Float {
+//        guard let text = loginEmailInputView.textFieldView.text, let font = loginEmailInputView.textFieldView.font else { return 0 }
+//        let textFieldWidth = loginEmailInputView.textFieldView.bounds.width - (2 *  textFieldHorizontalMargin)
+//        return min(Float(text.size(withAttributes: [NSAttributedString.Key.font : font]).width / textFieldWidth), 1)
+//    }
+//    func stopHeadRotation() {
+//        emailTextField.resignFirstResponder()
+//        passwordTextField.resignFirstResponder()
+//        critterView.stopHeadRotation()
+//        passwordDidResignAsFirstResponder()
+//    }
+//     func passwordDidResignAsFirstResponder() {
+//        critterView.isPeeking = false
+//        critterView.isShy = false
+//        showHidePasswordButton.isHidden = true
+//        showHidePasswordButton.isSelected = false
+//        loginPasswordInputView.textFieldView.text.isSecureTextEntry = true
+//    }
     //MARK:Functions
     
     func setupVideoBackgrond() {
@@ -120,7 +154,7 @@ class ViewController: UIViewController {
             avPlayer = AVPlayer(url: url)
             let avPlayerLayer = AVPlayerLayer(player: avPlayer)
             avPlayerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-            avPlayer.volume = 0
+            avPlayer.volume = 5
             avPlayer.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
             
             avPlayerLayer.frame = view.layer.bounds
@@ -139,60 +173,117 @@ class ViewController: UIViewController {
     
     //MARK: - button actions
     @IBAction func loginButtonTouchUpInside(_ sender: AnyObject) {
-        
+        let Email:String? = loginEmailInputView.textFieldView.text!
+        var Password:String? = loginPasswordInputView.textFieldView.text!
         if mode == .signup {
             toggleViewMode(animated: true)
             
-        }else{
+        }
+        if Email == "" || Password == ""
+        {
+            //message box
+            let msg = UIAlertController(title: "Error", message: "Please enter your Email & Password ", preferredStyle: .alert)
+            msg.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(msg, animated: true, completion: nil)
             
+        }
+        else if Email != nil && Password != nil
+        {
             //TODO: login by this data
             SVProgressHUD.show()
             
             Auth.auth().signIn(withEmail: loginEmailInputView.textFieldView.text!, password: loginPasswordInputView.textFieldView.text!) { (user, error) in
                 
                 if error != nil {
-                    print(error!)
+                    let msg = UIAlertController(title: "Error", message: "\(error!.localizedDescription) ", preferredStyle: .alert)
+                    msg.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                        NSLog("The \"OK\" alert occured.")
+                        
+                    }))
+                    self.present(msg, animated: true, completion: nil)
+                    Password = ""
+                    SVProgressHUD.dismiss()
                 } else {
                     print("Log in successful!")
                     
-                   SVProgressHUD.dismiss()
+                    SVProgressHUD.dismiss()
                     
                     self.performSegue(withIdentifier: "GoToHome", sender: self)
                     
                 }
-                
             }
-
+        }else
+        {
+            let msg = UIAlertController(title: "Error", message: "Please enter your Email & Password ", preferredStyle: .alert)
+            msg.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(msg, animated: true, completion: nil)
+            Password = ""
         }
+        
+        
+        
     }
     
     @IBAction func signupButtonTouchUpInside(_ sender: AnyObject) {
-        
+        let Email:String? = signupEmailInputView.textFieldView.text!
+        var Password:String? = signupPasswordInputView.textFieldView.text!
+        var confirmPassword:String? = signupPasswordConfirmInputView.textFieldView.text!
+    
         if mode == .login {
             toggleViewMode(animated: true)
-        }else{
+        } else if Email != nil && Password != nil && confirmPassword != nil {
             
             //TODO: signup by this data
             SVProgressHUD.show()
             
             //Set up a new user on our Firebase database
-            
-            Auth.auth().createUser(withEmail:signupEmailInputView.textFieldView.text!, password: signupPasswordInputView.textFieldView.text!) { (user, error) in
+            if Password == confirmPassword {
                 
-                if error != nil {
-                    print(error!)
-                } else {
-                    print("Registration Successful!")
+                Auth.auth().createUser(withEmail:signupEmailInputView.textFieldView.text!, password: signupPasswordInputView.textFieldView.text!) { (user, error) in
                     
-                    SVProgressHUD.dismiss()
-                    
-                    self.performSegue(withIdentifier: "GoToHome", sender: self)
+                    if error != nil && Password!.count <= 6 {
+                        let msg = UIAlertController(title: "Error", message: " \(error!.localizedDescription) ", preferredStyle: .alert)
+                        
+                        msg.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                            NSLog("The \"OK\" alert occured.")
+                            
+                        }))
+                        self.present(msg, animated: true, completion: nil)
+                        SVProgressHUD.dismiss()
+                        Password = ""
+                        confirmPassword = ""
+
+                    }
+                    else
+                    {
+                        print("Registration Successful!")
+                        
+                        SVProgressHUD.dismiss()
+                        
+                        self.performSegue(withIdentifier: "GoToHome", sender: self)
+                    }
                 }
             }
-            
-        }
-        
-        }
+                }
+         if Password != confirmPassword {
+                let msg = UIAlertController(title: "Error", message: "Passwords Does'nt Match ", preferredStyle: .alert)
+                msg.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                    
+                }))
+                self.present(msg, animated: true, completion: nil)
+                SVProgressHUD.dismiss()
+
+            Password = ""
+            confirmPassword = ""
+          
+
+                }
+            }
     
     
     
@@ -202,9 +293,9 @@ class ViewController: UIViewController {
         
         // toggle mode
         mode = mode == .login ? .signup:.login
-        videoURL = Bundle.main.url(forResource: "CD", withExtension: "mp4")
+        videoURL = Bundle.main.url(forResource: "CD", withExtension: "mp4")?.absoluteURL
         // set constraints changes
- // backImageLeftConstraint.constant = mode == .login ? 0:-self.view.frame.size.width
+ backImageLeftConstraint.constant = mode == .login ? 0:-self.view.frame.size.width
         
         
         loginWidthConstraint.isActive = mode == .signup ? true:false
@@ -276,7 +367,7 @@ class ViewController: UIViewController {
         let hideLogo = self.view.frame.size.height < 667
         
         // set constraints
-//       backImageBottomConstraint.constant = self.view.frame.size.height - topOfKetboard
+   backImageBottomConstraint.constant = self.view.frame.size.height - topOfKetboard
         
         logoTopConstraint.constant = keyboardShow ? (hideLogo ? 0:20):50
         logoHeightConstraint.constant = keyboardShow ? (hideLogo ? 0:40):60
@@ -312,6 +403,28 @@ class ViewController: UIViewController {
     
     
     
+//    @IBAction func Logout(_ sender: UIBarButtonItem) {
+//        
+//        do {
+//            try Auth.auth().signOut()
+//            
+//            navigationController?.popToRootViewController(animated: true)
+//            SVProgressHUD.show()
+//            
+//        }
+//        catch {
+//            print("error: there was a problem logging out")
+//            let msg = UIAlertController(title: "Error Loging out", message: " \(error.localizedDescription) ", preferredStyle: .alert)
+//            
+//            msg.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+//                NSLog("The \"OK\" alert occured.")
+//                
+//            }))
+//            self.present(msg, animated: true, completion: nil)
+//            SVProgressHUD.dismiss()
+//        }
+//
+//    }
     
 }//END
 

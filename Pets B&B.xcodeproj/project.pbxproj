@@ -12,17 +12,18 @@
 		624DE1EB21F6EB0E0011AAD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */; };
 		624DE1ED21F6EB0E0011AAD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */; };
 		624DE1F321F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1F121F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld */; };
-		624DE1F521F6EB100011AAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1F421F6EB100011AAD1 /* Assets.xcassets */; };
+		624DE1F521F6EB100011AAD1 /* Assets1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1F421F6EB100011AAD1 /* Assets1.xcassets */; };
 		624DE1F821F6EB100011AAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1F621F6EB100011AAD1 /* LaunchScreen.storyboard */; };
 		624DE20021F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1FF21F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg */; };
 		624DE20821F6FDDE0011AAD1 /* SignUpB.png in Resources */ = {isa = PBXBuildFile; fileRef = 624DE20721F6FDDE0011AAD1 /* SignUpB.png */; };
-		624DE22121F733940011AAD1 /* CD.mov in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22021F733940011AAD1 /* CD.mov */; };
-		624DE22321F734DA0011AAD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22221F734DA0011AAD1 /* Main.storyboard */; };
 		624DE22621F7350B0011AAD1 /* AMInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE22521F7350B0011AAD1 /* AMInputView.swift */; };
 		624DE22821F735100011AAD1 /* AMInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22721F735100011AAD1 /* AMInputView.xib */; };
 		624DE22A21F7355C0011AAD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22921F7355C0011AAD1 /* Images.xcassets */; };
 		624DE22E21F762930011AAD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 624DE22D21F762930011AAD1 /* GoogleService-Info.plist */; };
 		62679C2521F832EB003AFC0C /* logoo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62679C2421F832EB003AFC0C /* logoo.png */; };
+		62AAD89221FEDE5F00E70166 /* CD.mov in Resources */ = {isa = PBXBuildFile; fileRef = 62AAD89121FEDE5F00E70166 /* CD.mov */; };
+		62AAD8C921FF146C00E70166 /* SignOUt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD8C821FF146C00E70166 /* SignOUt.swift */; };
+		62AAD8CB21FF151500E70166 /* AnimalPlanet in Resources */ = {isa = PBXBuildFile; fileRef = 62AAD8CA21FF151500E70166 /* AnimalPlanet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,18 +34,19 @@
 		624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		624DE1F221F6EB0E0011AAD1 /* Pets_B_B.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pets_B_B.xcdatamodel; sourceTree = "<group>"; };
-		624DE1F421F6EB100011AAD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		624DE1F421F6EB100011AAD1 /* Assets1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets1.xcassets; sourceTree = "<group>"; };
 		624DE1F721F6EB100011AAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		624DE1F921F6EB100011AAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624DE1FF21F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog_foot_prints_background_repeating_design_6828604.jpg; sourceTree = "<group>"; };
 		624DE20721F6FDDE0011AAD1 /* SignUpB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpB.png; sourceTree = "<group>"; };
-		624DE22021F733940011AAD1 /* CD.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = CD.mov; sourceTree = SOURCE_ROOT; };
-		624DE22221F734DA0011AAD1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		624DE22521F7350B0011AAD1 /* AMInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMInputView.swift; sourceTree = "<group>"; };
 		624DE22721F735100011AAD1 /* AMInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMInputView.xib; sourceTree = "<group>"; };
 		624DE22921F7355C0011AAD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		624DE22D21F762930011AAD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		62679C2421F832EB003AFC0C /* logoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoo.png; sourceTree = "<group>"; };
+		62AAD89121FEDE5F00E70166 /* CD.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = CD.mov; sourceTree = "<group>"; };
+		62AAD8C821FF146C00E70166 /* SignOUt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOUt.swift; sourceTree = "<group>"; };
+		62AAD8CA21FF151500E70166 /* AnimalPlanet */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AnimalPlanet; sourceTree = "<group>"; };
 		C1D9DB7111ACC042DA5BAC0D /* Pods_Pets_B_B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets_B_B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F877CF270080B865171D52CE /* Pods-Pets B&B.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets B&B.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */,
+				62AAD8C821FF146C00E70166 /* SignOUt.swift */,
 				620242C821F986B700B3919D /* Main.storyboard */,
 			);
 			path = "View Contollers";
@@ -91,14 +94,14 @@
 		624DE1E921F6EB0E0011AAD1 /* Pets B&B */ = {
 			isa = PBXGroup;
 			children = (
+				62AAD8CA21FF151500E70166 /* AnimalPlanet */,
 				620242C621F9824F00B3919D /* View Contollers */,
 				624DE22421F735010011AAD1 /* AMInputView */,
 				624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */,
 				62679C2421F832EB003AFC0C /* logoo.png */,
+				62AAD89121FEDE5F00E70166 /* CD.mov */,
 				620242C721F9865600B3919D /* CD.mp4 */,
-				624DE22021F733940011AAD1 /* CD.mov */,
-				624DE22221F734DA0011AAD1 /* Main.storyboard */,
-				624DE1F421F6EB100011AAD1 /* Assets.xcassets */,
+				624DE1F421F6EB100011AAD1 /* Assets1.xcassets */,
 				624DE22921F7355C0011AAD1 /* Images.xcassets */,
 				624DE20721F6FDDE0011AAD1 /* SignUpB.png */,
 				624DE1FF21F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg */,
@@ -198,7 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				624DE22A21F7355C0011AAD1 /* Images.xcassets in Resources */,
-				624DE22321F734DA0011AAD1 /* Main.storyboard in Resources */,
 				624DE22E21F762930011AAD1 /* GoogleService-Info.plist in Resources */,
 				624DE22821F735100011AAD1 /* AMInputView.xib in Resources */,
 				62679C2521F832EB003AFC0C /* logoo.png in Resources */,
@@ -206,8 +208,9 @@
 				624DE20821F6FDDE0011AAD1 /* SignUpB.png in Resources */,
 				624DE1F821F6EB100011AAD1 /* LaunchScreen.storyboard in Resources */,
 				624DE20021F6EBEB0011AAD1 /* dog_foot_prints_background_repeating_design_6828604.jpg in Resources */,
-				624DE1F521F6EB100011AAD1 /* Assets.xcassets in Resources */,
-				624DE22121F733940011AAD1 /* CD.mov in Resources */,
+				624DE1F521F6EB100011AAD1 /* Assets1.xcassets in Resources */,
+				62AAD8CB21FF151500E70166 /* AnimalPlanet in Resources */,
+				62AAD89221FEDE5F00E70166 /* CD.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +302,7 @@
 			files = (
 				624DE1ED21F6EB0E0011AAD1 /* ViewController.swift in Sources */,
 				624DE22621F7350B0011AAD1 /* AMInputView.swift in Sources */,
+				62AAD8C921FF146C00E70166 /* SignOUt.swift in Sources */,
 				624DE1EB21F6EB0E0011AAD1 /* AppDelegate.swift in Sources */,
 				624DE1F321F6EB0E0011AAD1 /* Pets_B_B.xcdatamodeld in Sources */,
 			);
