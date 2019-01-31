@@ -11,5 +11,6 @@ pod 'FirebaseUI/Auth'
 pod 'Firebase/Database'
 pod 'SVProgressHUD'
 pod 'ChameleonFramework'
+pod 'SideMenu'
 
 end

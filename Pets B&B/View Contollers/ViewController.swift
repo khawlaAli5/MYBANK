@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import Firebase
 import SVProgressHUD
+import ChameleonFramework
 
 enum AMLoginSignupViewMode {
     case login
@@ -18,23 +19,17 @@ enum AMLoginSignupViewMode {
 
 class ViewController: UIViewController,UITextFieldDelegate {
   
-   // let actionCodeSettings = ActionCodeSettings
-    
-//    URL(string: "https://www.google.com")
-    // The sign-in operation has to always be completed in the app.
-//    actionCodeSettings.handleCodeInApp = true
-//    actionCodeSettings.setIOSBundleID(Bundle.main.bundleIdentifier!)
-//    actionCodeSettings.
-//    setAndroidPackageName("com.example.android",
-//    installIfNotAvailable: false, minimumVersion: "12")
-    
-    
+   //Know with bank you want
+    var ButtonTag: Int = 0
     //SIGNIN PAGE
     
     let animationDuration = 0.25
     var mode:AMLoginSignupViewMode = .signup
     
     
+    @IBOutlet weak var EIcircle: UIImageView!
+    
+    @IBOutlet weak var ENBDcircle: UIImageView!
     /// URL of the background video
     public var videoURL: URL? {
         didSet {
@@ -65,12 +60,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     //MARK: - logo and constrains
     @IBOutlet weak var logoView: UIView!
+    @IBOutlet weak var Logo: UIImageView!
     @IBOutlet weak var logoTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var logoHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var logoBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var logoButtomInSingupConstraint: NSLayoutConstraint!
     @IBOutlet weak var logoCenterConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var ForgetLoginPassword: UIButton!
     
     @IBOutlet weak var forgotPassTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var socialsView: UIView!
@@ -97,12 +94,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
       //Background Video
         view.backgroundColor = UIColor(red: 224 / 255, green: 68 / 255, blue: 98 / 255, alpha: 1)
       
-        videoURL = Bundle.main.url(forResource: "CD", withExtension: "mov")?.absoluteURL
-        
+       // videoURL = Bundle.main.url(forResource: "CD", withExtension: "mov")?.absoluteURL
+        ButtonTag = 1
         //LOGIN
         // set view to login mode
         toggleViewMode(animated: false)
@@ -117,30 +114,53 @@ class ViewController: UIViewController,UITextFieldDelegate {
         loginButton.layer.cornerRadius = 10
         
         loginButton.clipsToBounds = true
+        Logo.image = UIImage(named: "ENBDLOGO")
         
     }
-//    //MARK:TeddyBear
-//
-//     func fractionComplete(for textField: UITextField) -> Float {
-//        guard let text = loginEmailInputView.textFieldView.text, let font = loginEmailInputView.textFieldView.font else { return 0 }
-//        let textFieldWidth = loginEmailInputView.textFieldView.bounds.width - (2 *  textFieldHorizontalMargin)
-//        return min(Float(text.size(withAttributes: [NSAttributedString.Key.font : font]).width / textFieldWidth), 1)
-//    }
-//    func stopHeadRotation() {
-//        emailTextField.resignFirstResponder()
-//        passwordTextField.resignFirstResponder()
-//        critterView.stopHeadRotation()
-//        passwordDidResignAsFirstResponder()
-//    }
-//     func passwordDidResignAsFirstResponder() {
-//        critterView.isPeeking = false
-//        critterView.isShy = false
-//        showHidePasswordButton.isHidden = true
-//        showHidePasswordButton.isSelected = false
-//        loginPasswordInputView.textFieldView.text.isSecureTextEntry = true
-//    }
-    //MARK:Functions
+    //MARK:Changing Color
     
+    @IBAction func EIButton(_ sender: Any) {
+        signupView.backgroundColor = UIColor.flatPurple()
+//signupContentView.backgroundColor = UIColor.flatPurpleColorDark()
+        loginView.backgroundColor = UIColor.flatWhite()
+        loginButton.titleLabel?.textColor = UIColor.flatPurpleColorDark()
+        loginEmailInputView.textFieldView.textColor = UIColor.flatBlack()
+        loginPasswordInputView.textFieldView.textColor = UIColor.flatBlack()
+        loginPasswordInputView.labelView.textColor = UIColor.flatBlack()
+        loginPasswordInputView.backWhiteView.backgroundColor = UIColor.lightGray
+        loginEmailInputView.labelView.textColor = UIColor.flatBlack()
+        loginEmailInputView.backWhiteView.backgroundColor = UIColor.flatGray()
+        ForgetLoginPassword.titleLabel?.textColor = UIColor.flatPurpleColorDark()
+        EIcircle.image = UIImage(named: "FullCircle")
+        ENBDcircle.image = UIImage(named: "BlankCircle")
+        
+        Logo.image = UIImage(named: "EILogo")
+        ButtonTag = 2
+    }
+    
+    @IBAction func ENBDbutton(_ sender: Any) {
+        
+        signupView.backgroundColor = UIColor.flatYellowColorDark()
+        //signupContentView.backgroundColor = UIColor.flatPurpleColorDark()
+        loginView.backgroundColor = UIColor.flatBlueColorDark()
+        loginButton.titleLabel?.textColor = UIColor.flatWhite()
+        loginEmailInputView.textFieldView.textColor = UIColor.flatWhite()
+       // loginPasswordInputView.textFieldView.textColor = UIColor.flatBlack()
+       // loginPasswordInputView.labelView.textColor = UIColor.flatBlack()
+       // loginPasswordInputView.backWhiteView.backgroundColor = UIColor.lightGray
+        //loginEmailInputView.labelView.textColor = UIColor.flatBlack()
+        //loginEmailInputView.backWhiteView.backgroundColor = UIColor.flatGray()
+        ForgetLoginPassword.titleLabel?.textColor = UIColor.flatWhite()
+        EIcircle.image = UIImage(named: "BlankCircle")
+        ENBDcircle.image = UIImage(named: "FullCircle")
+        
+        Logo.image = UIImage(named: "ENBDLOGO")
+        ButtonTag = 1
+    }
+    
+    
+    //MARK:Functions
+
     func setupVideoBackgrond() {
         
         if let url = videoURL {
@@ -154,7 +174,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             avPlayer = AVPlayer(url: url)
             let avPlayerLayer = AVPlayerLayer(player: avPlayer)
             avPlayerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-            avPlayer.volume = 5
+            avPlayer.volume = 0
             avPlayer.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
             
             avPlayerLayer.frame = view.layer.bounds
@@ -228,6 +248,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
     }
     
+    
+ 
+    
     @IBAction func signupButtonTouchUpInside(_ sender: AnyObject) {
         let Email:String? = signupEmailInputView.textFieldView.text!
         var Password:String? = signupPasswordInputView.textFieldView.text!
@@ -298,9 +321,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
  backImageLeftConstraint.constant = mode == .login ? 0:-self.view.frame.size.width
         
         
-        loginWidthConstraint.isActive = mode == .signup ? true:false
+       loginWidthConstraint.isActive = mode == .signup ? true:false
         logoCenterConstraint.constant = (mode == .login ? -1:1) * (loginWidthConstraint.multiplier * self.view.frame.size.width)/2
-        loginButtonVerticalCenterConstraint.priority = UILayoutPriority(rawValue: (mode == .login ? 900:900))
+       loginButtonVerticalCenterConstraint.priority = UILayoutPriority(rawValue: (mode == .login ? 900:900))
         signupButtonVerticalCenterConstraint.priority = UILayoutPriority(rawValue: (mode == .signup ?900:900))
         
         
@@ -319,7 +342,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
             
             // rotate and scale login button
             let scaleLogin:CGFloat = self.mode == .login ? 1:0.4
-            let rotateAngleLogin:CGFloat = self.mode == .login ? 0:CGFloat(-M_PI_2)
+           // let rotateAngleLogin:CGFloat = self.mode == .login ? 0:CGFloat(-M_PI_2)
+            let rotateAngleLogin:CGFloat = self.mode == .login ? 0:CGFloat(Double.pi/2)
             
             var transformLogin = CGAffineTransform(scaleX: scaleLogin, y: scaleLogin)
             transformLogin = transformLogin.rotated(by: rotateAngleLogin)
@@ -328,7 +352,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             
             // rotate and scale signup button
             let scaleSignup:CGFloat = self.mode == .signup ? 1:0.4
-            let rotateAngleSignup:CGFloat = self.mode == .signup ? 0:CGFloat(-M_PI_2)
+            let rotateAngleSignup:CGFloat = self.mode == .signup ? 0:CGFloat(Double.pi/2)
             
             var transformSignup = CGAffineTransform(scaleX: scaleSignup, y: scaleSignup)
             transformSignup = transformSignup.rotated(by: rotateAngleSignup)
