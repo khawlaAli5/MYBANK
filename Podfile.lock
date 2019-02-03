@@ -71,16 +71,22 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - Plaid (1.1.14)
+  - ReachabilitySwift (4.3.0)
   - SideMenu (5.0.1)
   - SVProgressHUD (2.2.5)
+  - SwiftChart (0.5.0)
 
 DEPENDENCIES:
   - ChameleonFramework
   - Firebase/Core
   - Firebase/Database
   - FirebaseUI/Auth
+  - Plaid
+  - ReachabilitySwift
   - SideMenu
   - SVProgressHUD
+  - SwiftChart (from `https://github.com/aydenp/SwiftChart.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -98,8 +104,19 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - Plaid
+    - ReachabilitySwift
     - SideMenu
     - SVProgressHUD
+
+EXTERNAL SOURCES:
+  SwiftChart:
+    :git: https://github.com/aydenp/SwiftChart.git
+
+CHECKOUT OPTIONS:
+  SwiftChart:
+    :commit: ed7c331e3a81ceb70e621a6920d3c2865e37bfa7
+    :git: https://github.com/aydenp/SwiftChart.git
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
@@ -116,9 +133,12 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Plaid: c4e59e658ba9e061042a166be7e081780767a25c
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
   SideMenu: 87efd943737bb83aedf0358884d09fcf5576636d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftChart: ef5020d30f8a55e32e8e0a4fec51cf67822cff1d
 
-PODFILE CHECKSUM: ce1db75888bcfb9190d42c642b8213e252dc492d
+PODFILE CHECKSUM: a2abc9e286b831752c5aafff272dae690bd763c5
 
 COCOAPODS: 1.5.3

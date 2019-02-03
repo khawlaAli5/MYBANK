@@ -17,7 +17,7 @@ enum AMLoginSignupViewMode {
     case signup
 }
 
-class ViewController: UIViewController,UITextFieldDelegate {
+class ViewController1: UIViewController,UITextFieldDelegate {
   
    //Know with bank you want
     var ButtonTag: Int = 0
