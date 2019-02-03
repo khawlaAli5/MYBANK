@@ -12,8 +12,6 @@ pod 'Firebase/Database'
 pod 'SVProgressHUD'
 pod 'ChameleonFramework'
 pod 'SideMenu'
-pod 'Plaid'
-pod 'ReachabilitySwift'
-pod 'SwiftChart', :git => 'https://github.com/aydenp/SwiftChart.git'
+pod 'RealmSwift'
 
 end

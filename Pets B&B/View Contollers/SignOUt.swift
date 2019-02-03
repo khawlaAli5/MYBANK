@@ -11,9 +11,10 @@ import Firebase
 import SVProgressHUD
 import SideMenu
 class SignOUt:UIViewController {
-
+    var Tag:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+         print(Tag)
 //
 //        // Do any additional setup after loading the view.
 //        // Define the menus

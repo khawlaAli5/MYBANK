@@ -9,47 +9,10 @@
 /* Begin PBXBuildFile section */
 		00F851E8618476AFB4F44B70 /* Pods_Pets_B_B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D9DB7111ACC042DA5BAC0D /* Pods_Pets_B_B.framework */; };
 		620242C921F986B700B3919D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620242C821F986B700B3919D /* Main.storyboard */; };
-		620F97EE2206C313001C382C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97E72206C312001C382C /* AccountViewController.swift */; };
-		620F97F02206C313001C382C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97E92206C313001C382C /* StatusViewController.swift */; };
-		620F97F12206C313001C382C /* NoAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97EB2206C313001C382C /* NoAccountsViewController.swift */; };
-		620F97F22206C313001C382C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97EC2206C313001C382C /* ViewController.swift */; };
-		620F97F32206C313001C382C /* ViewController+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97ED2206C313001C382C /* ViewController+Status.swift */; };
-		620F97FB2206C335001C382C /* RangeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97F42206C335001C382C /* RangeSegmentedControl.swift */; };
-		620F97FC2206C335001C382C /* TransactionAmountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97F52206C335001C382C /* TransactionAmountLabel.swift */; };
-		620F97FD2206C335001C382C /* AccountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97F62206C335001C382C /* AccountHeaderView.swift */; };
-		620F97FE2206C335001C382C /* StatusBarOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97F72206C335001C382C /* StatusBarOverlayView.swift */; };
-		620F97FF2206C335001C382C /* BackgroundGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97F82206C335001C382C /* BackgroundGradientView.swift */; };
-		620F98002206C335001C382C /* AmountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97F92206C335001C382C /* AmountLabel.swift */; };
-		620F98012206C335001C382C /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F97FA2206C335001C382C /* TransactionCell.swift */; };
-		620F98052206C33F001C382C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98022206C33F001C382C /* GradientView.swift */; };
-		620F98062206C33F001C382C /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98032206C33F001C382C /* HairlineView.swift */; };
-		620F98072206C33F001C382C /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98042206C33F001C382C /* APButton.swift */; };
-		620F98112206C35A001C382C /* UIColor+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98082206C359001C382C /* UIColor+Gradient.swift */; };
-		620F98122206C35A001C382C /* NSAttributedString+LargestFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98092206C359001C382C /* NSAttributedString+LargestFontSize.swift */; };
-		620F98132206C35A001C382C /* Account+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F980A2206C359001C382C /* Account+Transactions.swift */; };
-		620F98142206C35A001C382C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F980B2206C359001C382C /* Account.swift */; };
-		620F98152206C35A001C382C /* PlaidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F980C2206C359001C382C /* PlaidManager.swift */; };
-		620F98162206C35A001C382C /* Institution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F980D2206C35A001C382C /* Institution.swift */; };
-		620F98172206C35A001C382C /* PlaidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F980E2206C35A001C382C /* PlaidAPI.swift */; };
-		620F98182206C35A001C382C /* UIViewController+ShorthandAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F980F2206C35A001C382C /* UIViewController+ShorthandAlerts.swift */; };
-		620F98192206C35A001C382C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98102206C35A001C382C /* Transaction.swift */; };
-		620F98242206C3D9001C382C /* TransactionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F981A2206C3D7001C382C /* TransactionsResponse.swift */; };
-		620F98252206C3D9001C382C /* InstitutionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F981B2206C3D8001C382C /* InstitutionResponse.swift */; };
-		620F98262206C3D9001C382C /* PaginatingPlaidResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F981C2206C3D8001C382C /* PaginatingPlaidResponse.swift */; };
-		620F98272206C3D9001C382C /* PlaidAPI+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F981D2206C3D8001C382C /* PlaidAPI+Transactions.swift */; };
-		620F98282206C3D9001C382C /* PlaidResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F981E2206C3D8001C382C /* PlaidResponse.swift */; };
-		620F98292206C3D9001C382C /* PlaidError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F981F2206C3D8001C382C /* PlaidError.swift */; };
-		620F982B2206C3D9001C382C /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98212206C3D9001C382C /* ErrorResponse.swift */; };
-		620F982C2206C3D9001C382C /* PlaidAPI+ExchangeTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98222206C3D9001C382C /* PlaidAPI+ExchangeTokens.swift */; };
-		620F982D2206C3D9001C382C /* AccessTokenExchangeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98232206C3D9001C382C /* AccessTokenExchangeResponse.swift */; };
-		620F98322206C3E5001C382C /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F982E2206C3E4001C382C /* Colours.swift */; };
-		620F98332206C3E5001C382C /* Plaid.plist in Resources */ = {isa = PBXBuildFile; fileRef = 620F982F2206C3E4001C382C /* Plaid.plist */; };
-		620F98342206C3E5001C382C /* SessionDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98302206C3E4001C382C /* SessionDataStorage.swift */; };
-		620F98352206C3E5001C382C /* PeriodicFetchDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98312206C3E5001C382C /* PeriodicFetchDataStorage.swift */; };
-		620F98372206C3E9001C382C /* PeriodicFetchDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98362206C3E9001C382C /* PeriodicFetchDataStorage.swift */; };
-		620F98392206C3EC001C382C /* SessionDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F98382206C3EC001C382C /* SessionDataStorage.swift */; };
+		620F983B2206D728001C382C /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F983A2206D728001C382C /* PresentedViewController.swift */; };
+		620F983E2206EE2C001C382C /* Choise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F983D2206EE2C001C382C /* Choise.swift */; };
 		624DE1EB21F6EB0E0011AAD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */; };
-		624DE1ED21F6EB0E0011AAD1 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EC21F6EB0E0011AAD1 /* ViewController1.swift */; };
+		624DE1ED21F6EB0E0011AAD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */; };
 		624DE1F321F6EB0E0011AAD1 /* ENBD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 624DE1F121F6EB0E0011AAD1 /* ENBD.xcdatamodeld */; };
 		624DE1F521F6EB100011AAD1 /* Assets1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1F421F6EB100011AAD1 /* Assets1.xcassets */; };
 		624DE1F821F6EB100011AAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624DE1F621F6EB100011AAD1 /* LaunchScreen.storyboard */; };
@@ -67,49 +30,11 @@
 		1ABAC207984ABD9F4F3080F2 /* Pods-Pets B&B.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets B&B.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pets B&B/Pods-Pets B&B.release.xcconfig"; sourceTree = "<group>"; };
 		620242C721F9865600B3919D /* CD.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CD.mp4; sourceTree = "<group>"; };
 		620242C821F986B700B3919D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		620F97E72206C312001C382C /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		620F97E92206C313001C382C /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
-		620F97EA2206C313001C382C /* Bank.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Bank.entitlements; sourceTree = "<group>"; };
-		620F97EB2206C313001C382C /* NoAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoAccountsViewController.swift; sourceTree = "<group>"; };
-		620F97EC2206C313001C382C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		620F97ED2206C313001C382C /* ViewController+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Status.swift"; sourceTree = "<group>"; };
-		620F97F42206C335001C382C /* RangeSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSegmentedControl.swift; sourceTree = "<group>"; };
-		620F97F52206C335001C382C /* TransactionAmountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionAmountLabel.swift; sourceTree = "<group>"; };
-		620F97F62206C335001C382C /* AccountHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountHeaderView.swift; sourceTree = "<group>"; };
-		620F97F72206C335001C382C /* StatusBarOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarOverlayView.swift; sourceTree = "<group>"; };
-		620F97F82206C335001C382C /* BackgroundGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundGradientView.swift; sourceTree = "<group>"; };
-		620F97F92206C335001C382C /* AmountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountLabel.swift; sourceTree = "<group>"; };
-		620F97FA2206C335001C382C /* TransactionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
-		620F98022206C33F001C382C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		620F98032206C33F001C382C /* HairlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairlineView.swift; sourceTree = "<group>"; };
-		620F98042206C33F001C382C /* APButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
-		620F98082206C359001C382C /* UIColor+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Gradient.swift"; sourceTree = "<group>"; };
-		620F98092206C359001C382C /* NSAttributedString+LargestFontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+LargestFontSize.swift"; sourceTree = "<group>"; };
-		620F980A2206C359001C382C /* Account+Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+Transactions.swift"; sourceTree = "<group>"; };
-		620F980B2206C359001C382C /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		620F980C2206C359001C382C /* PlaidManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidManager.swift; sourceTree = "<group>"; };
-		620F980D2206C35A001C382C /* Institution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Institution.swift; sourceTree = "<group>"; };
-		620F980E2206C35A001C382C /* PlaidAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidAPI.swift; sourceTree = "<group>"; };
-		620F980F2206C35A001C382C /* UIViewController+ShorthandAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShorthandAlerts.swift"; sourceTree = "<group>"; };
-		620F98102206C35A001C382C /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
-		620F981A2206C3D7001C382C /* TransactionsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsResponse.swift; sourceTree = "<group>"; };
-		620F981B2206C3D8001C382C /* InstitutionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstitutionResponse.swift; sourceTree = "<group>"; };
-		620F981C2206C3D8001C382C /* PaginatingPlaidResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginatingPlaidResponse.swift; sourceTree = "<group>"; };
-		620F981D2206C3D8001C382C /* PlaidAPI+Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaidAPI+Transactions.swift"; sourceTree = "<group>"; };
-		620F981E2206C3D8001C382C /* PlaidResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidResponse.swift; sourceTree = "<group>"; };
-		620F981F2206C3D8001C382C /* PlaidError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidError.swift; sourceTree = "<group>"; };
-		620F98212206C3D9001C382C /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		620F98222206C3D9001C382C /* PlaidAPI+ExchangeTokens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaidAPI+ExchangeTokens.swift"; sourceTree = "<group>"; };
-		620F98232206C3D9001C382C /* AccessTokenExchangeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenExchangeResponse.swift; sourceTree = "<group>"; };
-		620F982E2206C3E4001C382C /* Colours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
-		620F982F2206C3E4001C382C /* Plaid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Plaid.plist; sourceTree = "<group>"; };
-		620F98302206C3E4001C382C /* SessionDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDataStorage.swift; sourceTree = "<group>"; };
-		620F98312206C3E5001C382C /* PeriodicFetchDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicFetchDataStorage.swift; sourceTree = "<group>"; };
-		620F98362206C3E9001C382C /* PeriodicFetchDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeriodicFetchDataStorage.swift; path = Storage/PeriodicFetchDataStorage.swift; sourceTree = "<group>"; };
-		620F98382206C3EC001C382C /* SessionDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionDataStorage.swift; path = Storage/SessionDataStorage.swift; sourceTree = "<group>"; };
+		620F983A2206D728001C382C /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
+		620F983D2206EE2C001C382C /* Choise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choise.swift; sourceTree = "<group>"; };
 		624DE1E721F6EB0E0011AAD1 /* Pets B&B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pets B&B.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		624DE1EC21F6EB0E0011AAD1 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		624DE1F221F6EB0E0011AAD1 /* Pets_B_B.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pets_B_B.xcdatamodel; sourceTree = "<group>"; };
 		624DE1F421F6EB100011AAD1 /* Assets1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets1.xcassets; sourceTree = "<group>"; };
 		624DE1F721F6EB100011AAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -141,57 +66,20 @@
 		620242C621F9824F00B3919D /* View Contollers */ = {
 			isa = PBXGroup;
 			children = (
-				624DE1EC21F6EB0E0011AAD1 /* ViewController1.swift */,
+				624DE1EC21F6EB0E0011AAD1 /* ViewController.swift */,
 				62AAD8C821FF146C00E70166 /* SignOUt.swift */,
+				620F983A2206D728001C382C /* PresentedViewController.swift */,
 				620242C821F986B700B3919D /* Main.storyboard */,
 			);
 			path = "View Contollers";
 			sourceTree = "<group>";
 		};
-		620F97E62206C2F1001C382C /* ShowBankStatus */ = {
+		620F983C2206EE06001C382C /* RealmSwift */ = {
 			isa = PBXGroup;
 			children = (
-				620F980B2206C359001C382C /* Account.swift */,
-				620F980A2206C359001C382C /* Account+Transactions.swift */,
-				620F982E2206C3E4001C382C /* Colours.swift */,
-				620F98312206C3E5001C382C /* PeriodicFetchDataStorage.swift */,
-				620F98302206C3E4001C382C /* SessionDataStorage.swift */,
-				620F980D2206C35A001C382C /* Institution.swift */,
-				620F98092206C359001C382C /* NSAttributedString+LargestFontSize.swift */,
-				620F980E2206C35A001C382C /* PlaidAPI.swift */,
-				620F980C2206C359001C382C /* PlaidManager.swift */,
-				620F98232206C3D9001C382C /* AccessTokenExchangeResponse.swift */,
-				620F98212206C3D9001C382C /* ErrorResponse.swift */,
-				620F981B2206C3D8001C382C /* InstitutionResponse.swift */,
-				620F981C2206C3D8001C382C /* PaginatingPlaidResponse.swift */,
-				620F98222206C3D9001C382C /* PlaidAPI+ExchangeTokens.swift */,
-				620F981D2206C3D8001C382C /* PlaidAPI+Transactions.swift */,
-				620F98362206C3E9001C382C /* PeriodicFetchDataStorage.swift */,
-				620F981F2206C3D8001C382C /* PlaidError.swift */,
-				620F98382206C3EC001C382C /* SessionDataStorage.swift */,
-				620F981E2206C3D8001C382C /* PlaidResponse.swift */,
-				620F981A2206C3D7001C382C /* TransactionsResponse.swift */,
-				620F98102206C35A001C382C /* Transaction.swift */,
-				620F98082206C359001C382C /* UIColor+Gradient.swift */,
-				620F980F2206C35A001C382C /* UIViewController+ShorthandAlerts.swift */,
-				620F98042206C33F001C382C /* APButton.swift */,
-				620F98022206C33F001C382C /* GradientView.swift */,
-				620F98032206C33F001C382C /* HairlineView.swift */,
-				620F97F62206C335001C382C /* AccountHeaderView.swift */,
-				620F97F92206C335001C382C /* AmountLabel.swift */,
-				620F97F82206C335001C382C /* BackgroundGradientView.swift */,
-				620F97F42206C335001C382C /* RangeSegmentedControl.swift */,
-				620F97F72206C335001C382C /* StatusBarOverlayView.swift */,
-				620F97F52206C335001C382C /* TransactionAmountLabel.swift */,
-				620F97FA2206C335001C382C /* TransactionCell.swift */,
-				620F97E72206C312001C382C /* AccountViewController.swift */,
-				620F97EA2206C313001C382C /* Bank.entitlements */,
-				620F97EB2206C313001C382C /* NoAccountsViewController.swift */,
-				620F97E92206C313001C382C /* StatusViewController.swift */,
-				620F97EC2206C313001C382C /* ViewController.swift */,
-				620F97ED2206C313001C382C /* ViewController+Status.swift */,
+				620F983D2206EE2C001C382C /* Choise.swift */,
 			);
-			path = ShowBankStatus;
+			path = RealmSwift;
 			sourceTree = "<group>";
 		};
 		624DE1DE21F6EB0E0011AAD1 = {
@@ -215,11 +103,10 @@
 		624DE1E921F6EB0E0011AAD1 /* Pets B&B */ = {
 			isa = PBXGroup;
 			children = (
-				620F97E62206C2F1001C382C /* ShowBankStatus */,
+				620F983C2206EE06001C382C /* RealmSwift */,
 				620242C621F9824F00B3919D /* View Contollers */,
 				624DE22421F735010011AAD1 /* AMInputView */,
 				624DE1EA21F6EB0E0011AAD1 /* AppDelegate.swift */,
-				620F982F2206C3E4001C382C /* Plaid.plist */,
 				62679C2421F832EB003AFC0C /* logoo.png */,
 				62AAD89121FEDE5F00E70166 /* CD.mov */,
 				620242C721F9865600B3919D /* CD.mp4 */,
@@ -324,7 +211,6 @@
 				624DE22A21F7355C0011AAD1 /* Images.xcassets in Resources */,
 				624DE22E21F762930011AAD1 /* GoogleService-Info.plist in Resources */,
 				624DE22821F735100011AAD1 /* AMInputView.xib in Resources */,
-				620F98332206C3E5001C382C /* Plaid.plist in Resources */,
 				62679C2521F832EB003AFC0C /* logoo.png in Resources */,
 				620242C921F986B700B3919D /* Main.storyboard in Resources */,
 				624DE20821F6FDDE0011AAD1 /* SignUpB.png in Resources */,
@@ -371,11 +257,10 @@
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${PODS_ROOT}/Plaid/ios/LinkKit.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftChart/SwiftChart.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -386,11 +271,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LinkKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftChart.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -428,49 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				620F98162206C35A001C382C /* Institution.swift in Sources */,
-				620F98052206C33F001C382C /* GradientView.swift in Sources */,
-				620F982C2206C3D9001C382C /* PlaidAPI+ExchangeTokens.swift in Sources */,
-				620F97FF2206C335001C382C /* BackgroundGradientView.swift in Sources */,
-				620F98122206C35A001C382C /* NSAttributedString+LargestFontSize.swift in Sources */,
-				620F98002206C335001C382C /* AmountLabel.swift in Sources */,
-				620F98072206C33F001C382C /* APButton.swift in Sources */,
-				620F97F22206C313001C382C /* ViewController.swift in Sources */,
-				620F98372206C3E9001C382C /* PeriodicFetchDataStorage.swift in Sources */,
-				620F98062206C33F001C382C /* HairlineView.swift in Sources */,
-				620F97F02206C313001C382C /* StatusViewController.swift in Sources */,
-				620F97F32206C313001C382C /* ViewController+Status.swift in Sources */,
-				624DE1ED21F6EB0E0011AAD1 /* ViewController1.swift in Sources */,
-				620F97FE2206C335001C382C /* StatusBarOverlayView.swift in Sources */,
-				620F982B2206C3D9001C382C /* ErrorResponse.swift in Sources */,
-				620F982D2206C3D9001C382C /* AccessTokenExchangeResponse.swift in Sources */,
-				620F97FB2206C335001C382C /* RangeSegmentedControl.swift in Sources */,
-				620F98252206C3D9001C382C /* InstitutionResponse.swift in Sources */,
+				624DE1ED21F6EB0E0011AAD1 /* ViewController.swift in Sources */,
 				624DE22621F7350B0011AAD1 /* AMInputView.swift in Sources */,
-				620F98262206C3D9001C382C /* PaginatingPlaidResponse.swift in Sources */,
-				620F98192206C35A001C382C /* Transaction.swift in Sources */,
-				620F97EE2206C313001C382C /* AccountViewController.swift in Sources */,
+				620F983E2206EE2C001C382C /* Choise.swift in Sources */,
 				62AAD8C921FF146C00E70166 /* SignOUt.swift in Sources */,
-				620F98342206C3E5001C382C /* SessionDataStorage.swift in Sources */,
-				620F98152206C35A001C382C /* PlaidManager.swift in Sources */,
-				620F98392206C3EC001C382C /* SessionDataStorage.swift in Sources */,
-				620F98352206C3E5001C382C /* PeriodicFetchDataStorage.swift in Sources */,
-				620F98282206C3D9001C382C /* PlaidResponse.swift in Sources */,
-				620F98182206C35A001C382C /* UIViewController+ShorthandAlerts.swift in Sources */,
-				620F97FC2206C335001C382C /* TransactionAmountLabel.swift in Sources */,
 				624DE1EB21F6EB0E0011AAD1 /* AppDelegate.swift in Sources */,
-				620F98272206C3D9001C382C /* PlaidAPI+Transactions.swift in Sources */,
-				620F98112206C35A001C382C /* UIColor+Gradient.swift in Sources */,
-				620F98172206C35A001C382C /* PlaidAPI.swift in Sources */,
-				620F98322206C3E5001C382C /* Colours.swift in Sources */,
-				620F98012206C335001C382C /* TransactionCell.swift in Sources */,
-				620F98142206C35A001C382C /* Account.swift in Sources */,
-				620F97FD2206C335001C382C /* AccountHeaderView.swift in Sources */,
-				620F98292206C3D9001C382C /* PlaidError.swift in Sources */,
-				620F97F12206C313001C382C /* NoAccountsViewController.swift in Sources */,
-				620F98132206C35A001C382C /* Account+Transactions.swift in Sources */,
-				620F98242206C3D9001C382C /* TransactionsResponse.swift in Sources */,
 				624DE1F321F6EB0E0011AAD1 /* ENBD.xcdatamodeld in Sources */,
+				620F983B2206D728001C382C /* PresentedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

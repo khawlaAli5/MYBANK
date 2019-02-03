@@ -13,7 +13,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController1" customModule="Pets_B_B" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Pets_B_B" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -349,10 +349,10 @@
             </objects>
             <point key="canvasLocation" x="49" y="238"/>
         </scene>
-        <!--SignO Ut-->
+        <!--HomeView-->
         <scene sceneID="9Ui-Dd-dBw">
             <objects>
-                <viewController id="1Pm-Dc-WzS" customClass="SignOUt" customModule="Pets_B_B" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HomeView" id="1Pm-Dc-WzS" customClass="SignOUt" customModule="Pets_B_B" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bpi-N9-muz"/>
                         <viewControllerLayoutGuide type="bottom" id="ENO-cQ-g7v"/>
@@ -363,21 +363,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="tyF-hH-8Zt" colorLabel="IBBuiltInLabel-Red">
-                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="olI-Fx-9Y7">
+                        <barButtonItem key="leftBarButtonItem" image="EImenu" landscapeImage="EImenu" style="plain" id="olI-Fx-9Y7">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="600" maxY="0.0"/>
+                            <inset key="landscapeImageInsets" minX="0.0" minY="0.0" maxX="300" maxY="0.0"/>
+                            <inset key="largeContentSizeImageInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <color key="tintColor" red="0.90090745689999996" green="0.68662291769999995" blue="0.27828592060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
-                                <segue destination="EN1-5S-iQG" kind="presentation" id="mDf-Vr-mfb"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="logout-icon-png-25" id="DOM-wa-t4A">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="SignOut:" destination="1Pm-Dc-WzS" id="5as-YV-pz0"/>
-                                <segue destination="H5u-5N-4uv" kind="presentation" identifier="ShowStatus" id="jXW-pR-S3v"/>
+                                <action selector="MenuTint:" destination="1WE-MA-OPV" id="LmG-NY-19Y"/>
+                                <segue destination="EN1-5S-iQG" kind="presentation" identifier="LeftMenuNavigationController" id="mDf-Vr-mfb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQK-LJ-MWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1WE-MA-OPV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2088.8000000000002" y="237.93103448275863"/>
         </scene>
@@ -405,13 +404,14 @@
         <!--Side Menu Table View Controller-->
         <scene sceneID="BkB-wF-Zmr">
             <objects>
-                <tableViewController id="vFV-Ik-xBB" customClass="SideMenuTableViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="vFV-Ik-xBB" customClass="SideMenuTableViewController" customModule="Pets_B_B" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gGA-Wx-2BZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="8" maxY="0.0"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="Pgx-95-Klx">
                             <rect key="frame" x="0.0" y="132" width="375" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -437,7 +437,11 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.8617233634" green="0.64330857990000001" blue="0.24690991640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="sLY-0j-2Nz" kind="show" id="IKQ-11-6lX"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="XYZ-WU-SgH" style="IBUITableViewCellStyleDefault" id="GOU-2e-3k6" customClass="UITableViewVibrantCell" customModule="SideMenu">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -509,331 +513,41 @@
             </objects>
             <point key="canvasLocation" x="1149.5999999999999" y="237.93103448275863"/>
         </scene>
-        <!--Status View Controller-->
-        <scene sceneID="3Yw-yy-MOB">
+        <!--Bank Status-->
+        <scene sceneID="XDS-dP-3BQ">
             <objects>
-                <viewController id="H5u-5N-4uv" customClass="StatusViewController" customModule="Bank" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Uoc-PB-Qhk">
+                <viewController id="sLY-0j-2Nz" customClass="PresentedViewController" customModule="Pets_B_B" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RVH-zX-u70">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xqh-7N-mla">
-                                <rect key="frame" x="42.5" y="60" width="290" height="242"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ch5-l9-ktF">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="147.5"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kem-8I-i1s">
-                                                <rect key="frame" x="0.0" y="0.0" width="290" height="101"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="gsd-P1-AQd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="290" height="50.5"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                                        <color key="textColor" white="0.14092633930000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="GMx-H6-3at">
-                                                        <rect key="frame" x="0.0" y="50.5" width="290" height="50.5"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                                        <color key="textColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best place to store and view your bank accounts." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xU3-KY-Ji8">
-                                                <rect key="frame" x="0.0" y="109" width="290" height="38.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" white="0.14000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FuG-DP-bLC">
-                                        <rect key="frame" x="0.0" y="167.5" width="290" height="74.5"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBG-B6-pii" customClass="APButton" customModule="Bank" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="290" height="34"/>
-                                                <state key="normal" title="Link your Bank Account"/>
-                                                <connections>
-                                                    <action selector="tappedSetup:" destination="H5u-5N-4uv" eventType="touchUpInside" id="3Kt-zw-FUQ"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaY-zL-YQb">
-                                                <rect key="frame" x="0.0" y="42" width="290" height="32.5"/>
-                                                <string key="text">The Bank app does not store your banking credentials. All communication is done through a trusted third-party service, Plaid. For more information on the Plaid API, visit plaid.com.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="AV0-mm-f5w"/>
-                                </constraints>
-                            </stackView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="BbS-14-Uai">
-                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="WHO-GE-h88" firstAttribute="trailing" secondItem="Xqh-7N-mla" secondAttribute="trailing" priority="999" constant="35" id="BLX-4i-vqK"/>
-                            <constraint firstItem="Xqh-7N-mla" firstAttribute="centerX" secondItem="Uoc-PB-Qhk" secondAttribute="centerX" id="FQ1-jt-JWI"/>
-                            <constraint firstItem="BbS-14-Uai" firstAttribute="centerX" secondItem="Uoc-PB-Qhk" secondAttribute="centerX" id="MK1-le-fgD"/>
-                            <constraint firstItem="BbS-14-Uai" firstAttribute="centerY" secondItem="Uoc-PB-Qhk" secondAttribute="centerY" id="qe5-zg-WdK"/>
-                            <constraint firstItem="Xqh-7N-mla" firstAttribute="leading" secondItem="WHO-GE-h88" secondAttribute="leading" priority="999" constant="35" id="qke-mn-AwG"/>
-                            <constraint firstItem="Xqh-7N-mla" firstAttribute="top" secondItem="WHO-GE-h88" secondAttribute="top" constant="40" id="v73-eg-KZ0"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="WHO-GE-h88"/>
+                        <color key="backgroundColor" red="0.1224100813" green="0.16180959340000001" blue="0.2902112603" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="S4x-TC-hsp"/>
                     </view>
-                    <connections>
-                        <outlet property="loadingView" destination="BbS-14-Uai" id="phU-hf-LvL"/>
-                        <outlet property="setupBankView" destination="Xqh-7N-mla" id="iB0-Io-XrE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LKP-Nh-Ph0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2801" y="-583"/>
-        </scene>
-        <!--Account View Controller-->
-        <scene sceneID="9VL-19-Bj2">
-            <objects>
-                <tableViewController storyboardIdentifier="Account" id="y1j-hL-TFS" customClass="AccountViewController" customModule="Bank" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dUC-LK-Cfu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="YQA-lg-DiW" customClass="AccountHeaderView" customModule="Bank" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="374"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKQ-TG-oyB">
-                                    <rect key="frame" x="0.0" y="192.5" width="375" height="181.5"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hg9-cx-Gaf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
-                                            <subviews>
-                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Fyn-05-hZR">
-                                                    <rect key="frame" x="177.5" y="57" width="20" height="20"/>
-                                                </activityIndicatorView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Fyn-05-hZR" firstAttribute="centerY" secondItem="Hg9-cx-Gaf" secondAttribute="centerY" id="QNa-3z-77O"/>
-                                                <constraint firstItem="Fyn-05-hZR" firstAttribute="centerX" secondItem="Hg9-cx-Gaf" secondAttribute="centerX" id="zrl-ul-AEc"/>
-                                            </constraints>
-                                        </view>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IEj-Hl-P2n" customClass="RangeSegmentedControl" customModule="Bank" customModuleProvider="target">
-                                            <rect key="frame" x="14" y="143.5" width="347" height="29"/>
-                                            <segments>
-                                                <segment title="Value 1"/>
-                                                <segment title="Value 2"/>
-                                            </segments>
-                                            <connections>
-                                                <action selector="segmentedControlValueChanged:" destination="YQA-lg-DiW" eventType="valueChanged" id="4bb-8t-vyk"/>
-                                            </connections>
-                                        </segmentedControl>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Hg9-cx-Gaf" firstAttribute="leading" secondItem="WKQ-TG-oyB" secondAttribute="leading" id="2oq-3w-kog"/>
-                                        <constraint firstItem="IEj-Hl-P2n" firstAttribute="top" secondItem="Hg9-cx-Gaf" secondAttribute="bottom" constant="10" id="6ZT-rw-iTt"/>
-                                        <constraint firstItem="Hg9-cx-Gaf" firstAttribute="top" secondItem="WKQ-TG-oyB" secondAttribute="top" id="M5u-uv-emO"/>
-                                        <constraint firstAttribute="bottom" secondItem="IEj-Hl-P2n" secondAttribute="bottom" constant="10" id="Mu5-pk-i6c"/>
-                                        <constraint firstItem="IEj-Hl-P2n" firstAttribute="leading" secondItem="WKQ-TG-oyB" secondAttribute="leading" constant="14" id="fLp-nf-lEN"/>
-                                        <constraint firstAttribute="trailing" secondItem="IEj-Hl-P2n" secondAttribute="trailing" constant="14" id="ith-M7-q6k"/>
-                                        <constraint firstAttribute="trailing" secondItem="Hg9-cx-Gaf" secondAttribute="trailing" id="zTi-Cu-M8X"/>
-                                    </constraints>
-                                </view>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pH7-fw-w6m">
-                                    <rect key="frame" x="20" y="30" width="335" height="142.5"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="imc-pB-pNl">
-                                            <rect key="frame" x="77" y="0.0" width="181" height="142.5"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historic Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="nPk-mF-Rzc">
-                                                    <rect key="frame" x="32.5" y="0.0" width="116" height="23"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                                    <color key="textColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$---.--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8K-0N-KFh" customClass="AmountLabel" customModule="Bank" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="25" width="181" height="69.5"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="58"/>
-                                                    <color key="textColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8t3-m8-PwE">
-                                                    <rect key="frame" x="22" y="96.5" width="137.5" height="46"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="BNN-rP-ok5">
-                                                            <rect key="frame" x="0.0" y="0.0" width="137.5" height="24"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                            <color key="textColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSTITUTION NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="UgZ-c8-2ZN">
-                                                            <rect key="frame" x="0.0" y="29" width="137.5" height="17"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                            <color key="textColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="AC2-Y5-qCn"/>
-                                                    </constraints>
-                                                </stackView>
-                                            </subviews>
-                                        </stackView>
-                                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" defersCurrentPageDisplay="YES" numberOfPages="1" translatesAutoresizingMaskIntoConstraints="NO" id="RAj-c6-vRf">
-                                            <rect key="frame" x="159.5" y="0.0" width="16" height="16"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="16" placeholder="YES" id="6VT-8d-WY2"/>
-                                                <constraint firstAttribute="height" constant="16" id="Zzf-lB-Ruv"/>
-                                            </constraints>
-                                            <color key="pageIndicatorTintColor" white="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="currentPageIndicatorTintColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <action selector="pageControlChanged:" destination="v2Y-GH-nLB" eventType="valueChanged" id="UdH-cV-8Ge"/>
-                                                <action selector="pageControlChanged:" destination="YQA-lg-DiW" eventType="valueChanged" id="tR5-Xo-nbX"/>
-                                            </connections>
-                                        </pageControl>
-                                    </subviews>
-                                </stackView>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="WKQ-TG-oyB" secondAttribute="trailing" id="BIu-9e-sGX"/>
-                                <constraint firstItem="WKQ-TG-oyB" firstAttribute="top" secondItem="pH7-fw-w6m" secondAttribute="bottom" constant="20" id="G1u-JA-6Y5"/>
-                                <constraint firstItem="WKQ-TG-oyB" firstAttribute="leading" secondItem="YQA-lg-DiW" secondAttribute="leading" id="O6G-Ad-uGb"/>
-                                <constraint firstItem="pH7-fw-w6m" firstAttribute="top" secondItem="YQA-lg-DiW" secondAttribute="top" constant="30" id="fly-SN-4qj"/>
-                                <constraint firstItem="pH7-fw-w6m" firstAttribute="leading" secondItem="YQA-lg-DiW" secondAttribute="leading" constant="20" id="mip-Vf-nB8"/>
-                                <constraint firstAttribute="trailing" secondItem="pH7-fw-w6m" secondAttribute="trailing" constant="20" id="svv-gd-5a8"/>
-                                <constraint firstAttribute="bottom" secondItem="WKQ-TG-oyB" secondAttribute="bottom" id="v48-XS-BX3"/>
-                            </constraints>
+                    <navigationItem key="navigationItem" title="Bank Status" id="rfR-XP-ZNj">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ebK-d0-eYr"/>
+                        <barButtonItem key="leftBarButtonItem" image="EImenu" id="loe-ml-ElD">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="600" maxY="0.0"/>
+                            <color key="tintColor" red="0.90090745689999996" green="0.68662291769999995" blue="0.27828592060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
-                                <outlet property="amountLabel" destination="t8K-0N-KFh" id="R4T-eX-gc5"/>
-                                <outlet property="chartContainerView" destination="Hg9-cx-Gaf" id="i4N-VI-ttK"/>
-                                <outlet property="chartLoadingView" destination="Fyn-05-hZR" id="Sgx-f6-Szu"/>
-                                <outlet property="chartSegmentedControl" destination="IEj-Hl-P2n" id="Qii-0M-Ezv"/>
-                                <outlet property="historicDateLabel" destination="nPk-mF-Rzc" id="pOd-nL-TtG"/>
-                                <outlet property="infoStackView" destination="pH7-fw-w6m" id="0nv-xn-ANM"/>
-                                <outlet property="institutionLabel" destination="UgZ-c8-2ZN" id="los-LS-G2X"/>
-                                <outlet property="nameLabel" destination="BNN-rP-ok5" id="oBw-bf-ANS"/>
-                                <outlet property="pageControl" destination="RAj-c6-vRf" id="yf4-PV-zVf"/>
+                                <segue destination="EN1-5S-iQG" kind="presentation" id="eIX-M7-AYT"/>
                             </connections>
-                        </view>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="Idb-Il-vt6">
-                            <rect key="frame" x="0.0" y="446" width="375" height="1"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </view>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Transaction" id="JkE-YT-95N" customClass="TransactionCell" customModule="Bank" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="402" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JkE-YT-95N" id="Sy6-bM-fRV">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="yBM-6H-gvu">
-                                            <rect key="frame" x="16" y="4" width="139" height="36"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLS-h4-BcU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="139" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEH-Zb-gOf">
-                                                    <rect key="frame" x="0.0" y="21.5" width="139" height="14.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="$---.--" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBT-Yf-Ckf" customClass="TransactionAmountLabel" customModule="Bank" customModuleProvider="target">
-                                            <rect key="frame" x="175" y="11" width="184" height="21.5"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="hBT-Yf-Ckf" firstAttribute="centerY" secondItem="Sy6-bM-fRV" secondAttribute="centerY" id="5kk-vo-0T5"/>
-                                        <constraint firstItem="hBT-Yf-Ckf" firstAttribute="leading" secondItem="yBM-6H-gvu" secondAttribute="trailing" constant="20" id="MO4-h9-YFu"/>
-                                        <constraint firstItem="yBM-6H-gvu" firstAttribute="centerY" secondItem="Sy6-bM-fRV" secondAttribute="centerY" id="W8Y-7T-HXb"/>
-                                        <constraint firstItem="yBM-6H-gvu" firstAttribute="leading" secondItem="Sy6-bM-fRV" secondAttribute="leadingMargin" id="Wld-YO-Wec"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="hBT-Yf-Ckf" secondAttribute="trailing" id="pfK-R9-036"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="amountLabel" destination="hBT-Yf-Ckf" id="YCY-gZ-kPY"/>
-                                    <outlet property="subtitleLabel" destination="lEH-Zb-gOf" id="7OO-3L-hmE"/>
-                                    <outlet property="titleLabel" destination="YLS-h4-BcU" id="apH-vT-uBj"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="y1j-hL-TFS" id="chO-W4-RZr"/>
-                            <outlet property="delegate" destination="y1j-hL-TFS" id="X6q-NY-QRn"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H17-vz-Tjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="v2Y-GH-nLB" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="3441" y="101"/>
-        </scene>
-        <!--No Accounts View Controller-->
-        <scene sceneID="SG1-S3-bZb">
-            <objects>
-                <viewController storyboardIdentifier="NoAccounts" id="vcD-tl-WjY" customClass="NoAccountsViewController" customModule="Bank" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Q9k-TM-m1w">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="i3a-ic-9fH">
-                                <rect key="frame" x="37.5" y="304.5" width="300" height="58.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No bank accounts found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxj-ry-L5A">
-                                        <rect key="frame" x="31" y="0.0" width="238.5" height="26.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2M-lf-yzv">
-                                        <rect key="frame" x="79" y="28.5" width="142" height="30"/>
-                                        <state key="normal" title="Unlink Bank Account"/>
-                                        <connections>
-                                            <action selector="tappedUnlink:" destination="vcD-tl-WjY" eventType="touchUpInside" id="ei1-MS-RJ8"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="V1c-Ry-hCk"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="R6t-J3-13Z" firstAttribute="trailing" secondItem="i3a-ic-9fH" secondAttribute="trailing" priority="999" constant="20" id="Pas-8A-awK"/>
-                            <constraint firstItem="i3a-ic-9fH" firstAttribute="centerY" secondItem="Q9k-TM-m1w" secondAttribute="centerY" id="Vmf-Ls-0sX"/>
-                            <constraint firstItem="i3a-ic-9fH" firstAttribute="centerX" secondItem="Q9k-TM-m1w" secondAttribute="centerX" id="fhz-0t-CGV"/>
-                            <constraint firstItem="i3a-ic-9fH" firstAttribute="leading" secondItem="R6t-J3-13Z" secondAttribute="leading" priority="999" constant="20" id="mzk-4d-Dpc"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="R6t-J3-13Z"/>
-                    </view>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Yf-Yd-303" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RpV-yN-u5X" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3441" y="-583"/>
+            <point key="canvasLocation" x="3398" y="-583"/>
         </scene>
     </scenes>
     <resources>
         <image name="BlankCircle" width="980" height="980"/>
         <image name="EILogo" width="133.44000244140625" height="142.08000183105469"/>
+        <image name="EImenu" width="96" height="96"/>
         <image name="ENBDLOGO" width="87.360000610351562" height="85"/>
         <image name="FullCircle" width="491.51998901367188" height="491.51998901367188"/>
         <image name="backImage" width="240" height="131.52000427246094"/>
-        <image name="logout-icon-png-25" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mDf-Vr-mfb"/>
+    </inferredMetricsTieBreakers>
 </document>
